@@ -7,7 +7,7 @@ let seed = undefined;
 function getSeed() {
   seed = input.textContent.value;
   seed *= 1;
-  seed += math.pow(2, 48);
+  seed += Math.pow(2, 48);
 }
 
 msbtn.addEventListener("click", function() {
