@@ -4,9 +4,13 @@ const label = document.getElementById('label');
 
 let seed = undefined;
 
-
+function getSeed() {
+  seed = input.textContent.value;
+  seed *= 1;
+  seed += math.pow(2, 48);
+}
 
 msbtn.addEventListener("click", function() {
-  seed += math.pow(2, 48);
-  label.textContent = `Your new seed is: ${seed}`
+  getSeed();
+  label.textContent = `Your new seed is: ${seed}`;
 });
