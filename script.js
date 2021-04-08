@@ -2,7 +2,7 @@ const msbtn = document.getElementById('msbtn');
 const input = document.getElementById('input');
 const label = document.getElementById('label');
 
-let seed = undefined;
+let seed = NaN;
 
 function getSeed() {
   seed = input.value();
